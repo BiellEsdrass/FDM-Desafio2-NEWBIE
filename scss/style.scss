@@ -1,0 +1,144 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$fundoBg:#0d192b;
+$fundoCard:#14253d;
+$line:#2f415b;
+$p:#8bacda;
+
+body{
+    background-color: $fundoBg;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+}
+
+.section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0px 11px 25px 0px rgba(0, 0, 0, 0.525);
+
+    width: 410px;
+    height: auto;
+
+    background-color: $fundoCard;
+
+
+    .imgMain{
+        overflow: hidden;
+
+    }
+
+    
+    #iconView{
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 43%;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #imgPrincipal{
+        width: 100%;
+        height: 25rem;
+        border-radius: 25px;
+        background-size: cover;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    h3{
+        color: white;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: all .5s;
+        cursor: pointer;
+    }
+    h3:hover{
+        color: #00fff7;
+    }
+
+    p{
+        color: #8bacdaac;
+        margin-bottom: 1rem;
+        font-size: 20px;
+    }
+
+    .coin{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        text-align: center;
+
+
+        
+
+        .coin1{
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            text-align: center;
+
+            span{
+                color: #00fff7;
+                text-align: center;
+            }
+        }
+        .coin2{
+            display: flex;
+            gap: .5rem;
+            align-items: center;
+            text-align: center;
+            
+            span{
+                color: #8bacdaac;
+                text-align: center;
+            }
+        }
+    }
+    
+    .line{
+        width: 100%;
+        height: 1px;
+        background-color: $line;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    
+        img{
+            height: 3rem;
+            border: 2px solid #00fff7;
+            border-radius: 50%;
+        }
+
+        span{
+            color: #8bacdaac;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            transition: all .5s;
+        }
+        a:hover{
+            color: #00fff7;
+        }
+    }
+}
