@@ -114,4 +114,15 @@ body {
 }
 .section .footer a:hover {
   color: #00fff7;
+}
+
+.attribution {
+  color: white;
+  position: absolute;
+  top: 97%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+.attribution a {
+  color: #00fff7;
 }/*# sourceMappingURL=style.css.map */

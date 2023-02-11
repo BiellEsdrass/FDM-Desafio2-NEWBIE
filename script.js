@@ -2,6 +2,7 @@ const iconView = document.getElementById('iconView');
 const blurBg = document.getElementById('imgPrincipal');
 
 
+
 function blurOn(){
     blurBg.src='images/image-equilibriumBLUR.jpg'
 }
@@ -13,4 +14,7 @@ function blurOff(){
 
 
 blurBg.addEventListener('mouseover', blurOn);
+
+
+
 blurBg.addEventListener('mouseleave', blurOff);
